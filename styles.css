@@ -23,7 +23,7 @@ nav{
 }
 
 nav>h1{
-    padding-left: 30px;
+    padding-left: 40px;
 }
 
 nav>div{
@@ -32,7 +32,7 @@ nav>div{
 
 h1{
     color: white;
-    font-size: 60px;
+    font-size: 70px;
     font-family: 'Seaweed Script', cursive;
 
     color: #fff;
