@@ -73,7 +73,7 @@ h1 {
   align-items: center;
   background-color: #080630;
   color: #cc1423;
-  padding: 0px;
+  padding: 10px;
   font-family: 'Seaweed Script', cursive;
   text-shadow: 0 0 10px #410000, 0 0 20px #410000, 0 0 30px #410000;
   font-size: 40px;
@@ -90,8 +90,6 @@ h1 {
   align-items: center;
 }
 
-
-
 /* Style the right buttons */
 .right {
 display: flex;
@@ -105,7 +103,7 @@ gap: 30px; /* Adjust the spacing between buttons */
   background-repeat: no-repeat;
   border: none;
   padding: 20px 40px;
-  margin-top: 60px;
+  margin-top:-950px;
   margin-bottom: -50px;
   transition: transform 0.2s ease;
   width: 270px;
@@ -154,6 +152,30 @@ gap: 30px; /* Adjust the spacing between buttons */
   height: 250px;
 }
 
+.Left_4{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  outline:none;
+  padding: 20px 40px;
+  transition: transform 0.2s ease;
+  width: 250px;
+  height:250px;
+}
+
+.Left_5{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  outline:none;
+  padding: 20px 40px;
+  transition: transform 0.2s ease;
+  width: 250px;
+  height:250px;
+}
+
 .Right_1{
   background-size: cover;
   background-position: center;
@@ -179,6 +201,30 @@ gap: 30px; /* Adjust the spacing between buttons */
 }
 
 .Right_3{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  outline:none;
+  padding: 20px 40px;
+  transition: transform 0.2s ease;
+  width: 250px;
+  height: 250px;
+}
+
+.Right_4{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  outline:none;
+  padding: 20px 40px;
+  transition: transform 0.2s ease;
+  width: 250px;
+  height: 250px;
+}
+
+.Right_5{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -237,7 +283,11 @@ h2 {
   width: 300px;
 }
 
-#row_1,#row_2,#row_3{
+.item_right{
+  margin-top: -875px;
+}
+
+#row_1,#row_2,#row_3,#row_4, #row_5{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -245,14 +295,15 @@ h2 {
   margin-bottom: 50px;
 }
 
+
 #header1{
   display: flex;
   justify-content:center;
   align-items:center;
   flex-direction: column;
   text-align: left;
-  margin: -50px;
-  margin-top: -1300px;
+  margin: -100px;
+  margin-top: -2000px;
   color: white;
   font-size: 100px;
 
