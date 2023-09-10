@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Seaweed+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:wght@500&family=Seaweed+Script&display=swap');
 
 img{
   outline: none;
@@ -40,16 +40,16 @@ head{
   text-shadow: 0 0 7px #9e0000, 0 0 11px #ba2e2e, 0 0 15px #ff7676;
 }
 .home{
-  padding: 100px, 100px,100px,100px;
+  padding: 100px, 50px,100px,100px;
   transition: transform .2s; /* Animation */
-  width: 100px;
+  width: 300px;
   height: 100px;
   margin: 0 auto;
   background-color: #080630;
   border-radius: 10px;
   color: #cc1423;
   border: none;
-  font-size: 40px;
+  font-size: 35px;
   outline: none;
   font-weight: bold;
   text-shadow: 0 0 10px #410000, 0 0 20px #410000, 0 0 30px #410000;
@@ -102,11 +102,11 @@ gap: 30px; /* Adjust the spacing between buttons */
   background-position: center;
   background-repeat: no-repeat;
   border: none;
-  padding: 20px 40px;
+  padding: 0px;
   margin-top:-950px;
   margin-bottom: -50px;
   transition: transform 0.2s ease;
-  width: 270px;
+  width: 500px;
   height: 500px;
 
 }
@@ -258,6 +258,7 @@ body {
   background-size: auto;
   background-position:bottom;
   background-repeat: no-repeat;
+  font-family: 'Raleway', sans-serif;
 }
 
 h2 {
@@ -275,7 +276,7 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: 'Abril Fatface', sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: white;
   font-weight: strong;
   border: none;
@@ -312,7 +313,7 @@ h2 {
 #txt_clr{
   /* Tries to match colour of logo */
   color:#d0e5ff;
-  
+  margin-top: 50px;
   /* Attempt at Gradient for text
   background: -webkit-radial-gradient(30% 40%, circle closest-corner,rgb(167, 211, 255) 60%, rgb(80, 138, 255) 40%);
   -webkit-background-clip: text;
