@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Seaweed+Script&display=swap');
+
 body {
     margin: 0; /* Remove margin from the body element */
     padding: 0; /* Remove padding from the body element */
@@ -48,12 +50,12 @@ body {
 }
 
 h1 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
     text-align: center;
 }
 
 #update-button {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
     background-color: #500000;
     color: white;
     border: 1px solid gray;
@@ -73,7 +75,7 @@ h1 {
 }
 
 label {
-    font-family : 'Poppins', sans-serif;
+    font-family : 'Raleway', sans-serif;
     font-weight: 700;
     font-size: larger;
 }
