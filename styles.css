@@ -34,11 +34,19 @@ h1{
     color: white;
     font-size: 60px;
     font-family: 'Seaweed Script', cursive;
+
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 7.5px #fff,
+        0 0 82px rgb(145, 17, 17),
+        0 0 92px rgb(145, 17, 17),
+        0 0 102px rgb(145, 17, 17);
 }
 
 .home{
     color:white;
-    background-color: pink;
+    background-color: beige;
     border-radius: 10px;
     padding: 10px;
     font-family: 'Seaweed Script', sans-serif;
@@ -63,14 +71,16 @@ h1{
     width: 100%;
     gap: 20px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .section{
     padding: 60px 40px 60px 20px;
     color: maroon;
+    min-width: 25%;
     max-width: 33.33%; 
     float: left;
-    background-color: pink;
+    background-color: beige;
     background-size: cover;
     border-radius: 24px;
     text-align: center;
