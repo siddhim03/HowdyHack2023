@@ -122,7 +122,8 @@ p {
     height: 70%;
     width: 100vw;
     gap: 10%;
-    padding-left: 150px;
+    padding-left: 75px;
+    padding-right: 75px;
 }
 
 .image-caption{
