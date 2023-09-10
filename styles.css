@@ -45,7 +45,7 @@ h1{
     border-radius: 10px;
     padding: 10px;
     font-family: 'Seaweed Script', sans-serif;
-    font-size: 25px;
+    font-size: 35px;
     text-shadow: 0 0 7px #9e0000, 0 0 11px #ba2e2e, 0 0 15px #ff76;
     transition: transform 0.2s ease;
 }
@@ -69,9 +69,11 @@ h1{
 .revLogo{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     width: 50%;
     height: 100%;
-    margin-left: 14em;
+    margin-left: 50%;
+    margin-right: 50%;
     bottom: 2.5em;
 }
 
