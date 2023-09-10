@@ -9,14 +9,32 @@
         
     </head>
     <body>
-        <h1>Reveille's Diner</h1>
+        <h1>
+            <div class="left">Reveille's Diner</div>
+            <div class="right">
+                <button onclick="gotoMerch()" class="zoom">Merch</button>
+                <button onclick="gotoHome()" class="zoom">Home</button>
+                <button onclick="gotoRevSpotted()" class="zoom">Where's Rev?</button>
+            </div>
+
+        </h1>
         <p1>
             <strong>MENU!</strong>
         </p1>
-            <a href="merch.html"> MERCH </a>
-            <a href="index.html"> HOME </a>
-            <a href="ReveilleSpotting.html"> WHERE'S REV?  </a>
+            
 
         <img src="rev.jpeg">
+
+        <script>
+            function gotoMerch() {
+                window.location.href = "merch.html";
+            }
+            function gotoHome() {
+                window.location.href = "index.html";
+            }
+            function gotoRevSpotted() {
+                window.location.href = "ReveilleSpotting.html";
+            }
+        </script>
     </body>
 </html>
