@@ -7,6 +7,22 @@ body {
     background-color: #00000f;
 }
 
+.fornow{
+    display: flex;
+    flex-direction: row;
+}
+
+.temp{
+    font-size: 40px;
+    font-family: 'Seaweed Script', cursive;
+    color: #ff7cb3;
+    padding-top: 3%;
+    padding-left: 5px; 
+    font-weight: bold;
+    text-shadow: 0 0 7px #9e0000, 0 0 11px #ba2e2e, 0 0 15px #ff7676;
+
+}
+
 .maroon-bar {
     display: flex;
     flex-direction: row;
