@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Seaweed+Script&display=swap');
 
-
+img{
+outline:none;
+width: 150px;
+height: 150px;
+}
 
 head{
   color: #080630;
 }
 
-img {
-  width:100px;
-  border-radius: 10px;
-}
 
 .button {
   padding: 100px, 100px,100px,100px;
@@ -58,15 +58,21 @@ h1 {
   align-items: center;
   background-color: #080630;
   color: #cc1423;
-  padding: 10px;
+  padding: 0px;
   font-family: 'Seaweed Script', cursive;
   text-shadow: 0 0 10px #410000, 0 0 20px #410000, 0 0 30px #410000;
   font-size: 40px
 }
 /* Style the left content */
 .left {
-flex: 1; /* Takes up available space */
+  display: flex;
+  flex: 1; /* Takes up available space */
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
 }
+
+
 
 /* Style the right buttons */
 .right {
@@ -82,7 +88,6 @@ gap: 30px; /* Adjust the spacing between buttons */
   background-repeat: no-repeat;
   border: none;
   padding: 20px 40px;
- 
   transition: transform 0.2s ease;
   width: 100px;
   height: 200px;
@@ -93,18 +98,18 @@ gap: 30px; /* Adjust the spacing between buttons */
   transform: scale(1.51)
 }
 
-.Middle_3{
+/* .Left_3{
   background-image: url('RevLogo.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border: none;
+  outline:none;
   padding: 20px 40px;
- 
   transition: transform 0.2s ease;
-  width: 100px;
+  width: 200px;
   height: 200px;
-}
+} */
 
 .item_middle{
   height: 100%;
@@ -118,8 +123,14 @@ gap: 30px; /* Adjust the spacing between buttons */
 }
 
 body {
+  height: 1250px;
   background-color: #00000d;
-  
+  background-image: url(RevLogo.png);
+  background-size: auto;
+  background-position:bottom;
+  background-repeat: no-repeat;
+  height: 1500px;
+
 }
 
 h2 {
@@ -140,7 +151,8 @@ h2 {
   font-family: 'Abril Fatface', sans-serif;
   color: white;
   font-weight: strong;
-  
+  border: none;
+  outline:none;
 }
 
 #row_1,#row_2,#row_3{
