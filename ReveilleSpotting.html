@@ -30,6 +30,38 @@
         </div>
         <div id="map"></div>
         <script>
+            function updateMap(location) {
+            const map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: location, // Use the provided location as the initial center
+            });
+
+            const marker = new google.maps.Marker({
+                position: location,
+                map: map,
+            });
+        }
+         // Add an event listener for when the page loads
+         window.addEventListener('load', function () {
+         // Fetch the latest location data from the backend
+            fetch('/get-location')
+                .then((response) => response.json())
+                .then((data) => {
+                    const latestLocation = data.location;
+
+                    if (latestLocation) {
+                        // If there's a latest location, update the map with it
+                        updateMap(latestLocation);
+
+                        // Also update the displayed location
+                        const locationDisplay = document.getElementById('location-display');
+                        locationDisplay.textContent = latestLocation.name;
+                    }
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                });
+        });
             // Initialize Google Places Autocomplete for the input field
             const input = document.getElementById('location-input');
             const autocomplete = new google.maps.places.Autocomplete(input);
@@ -43,23 +75,56 @@
             // Create a marker (initially hidden)
             const marker = new google.maps.Marker({ map: map, visible: false });
         
-            // Listen for place selection
-            autocomplete.addListener('place_changed', function() {
-                const place = autocomplete.getPlace();
-                if (!place.geometry) {
-                    console.error('Place not found:', place.name);
-                    return;
-                }
         
-                // Update the map and marker with the selected place's location
-                map.setCenter(place.geometry.location);
-                marker.setPosition(place.geometry.location);
-                marker.setVisible(true);
+            function sendLocationToBackend(location) {
+                fetch('/update-location', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ location }),
+                    })
+                    .then((response) => response.json())
+                    .then((data) => {
+                     console.log(data.message); // Log the response from the backend
+                     })
+                     .catch((error) => {
+                    console.error('Error:', error);
+                    });
+            }
+
+    // Listen for place selection
+    autocomplete.addListener('place_changed', function() {
+        const place = autocomplete.getPlace();
+        if (!place.geometry) {
+            console.error('Place not found:', place.name);
+            return;
+        }
+
+        // Update the map and marker with the selected place's location
+        map.setCenter(place.geometry.location);
+        marker.setPosition(place.geometry.location);
+        marker.setVisible(true);
+
+        updateMap(place.geometry.location);
+
+        // Update the displayed location
+        const locationDisplay = document.getElementById('location-display');
+        locationDisplay.textContent = place.formatted_address; // or place.name
+
+        // Send the location data to the backend
+        sendLocationToBackend({
+            name: place.formatted_address, // or place.name
+            lat: place.geometry.location.lat(),
+            lng: place.geometry.location.lng(),
+        });
+    });
+
+    
+    
         
-                // Update the displayed location
-                const locationDisplay = document.getElementById('location-display');
-                locationDisplay.textContent = place.formatted_address; // or place.name
-            });
+
+            
         </script>
 
         
