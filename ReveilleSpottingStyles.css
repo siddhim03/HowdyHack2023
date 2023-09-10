@@ -3,12 +3,14 @@
 body {
     margin: 0; /* Remove margin from the body element */
     padding: 0; /* Remove padding from the body element */
+    /* background-color: #00000f; */
+    background-color: #00000f;
 }
 
 .maroon-bar {
     display: flex;
     flex-direction: row;
-    background-color: black; /* Set the background color to maroon */
+    background-color: #080630; /* Set the background color to maroon */
     color: white; /* Set the text color to white */
     padding: 30px; /* Add some padding to the top and bottom of the bar */
     text-align: center; /* Center-align the text within the bar */
@@ -18,29 +20,30 @@ body {
 }
 
 .title{
+    color: #ff7cb3;
     font-size: 70px;
-    color: #500000;
     font-family: 'Seaweed Script', cursive;
 
-    color: #fff;
-    text-shadow:
-        0 0 7px #fff,
-        0 0 82px rgb(145, 17, 17),
-        0 0 92px rgb(145, 17, 17),
-        0 0 102px rgb(145, 17, 17);
+    color: #ff7cb3;
+    text-shadow: 0 0 7px #9e0000, 0 0 11px #ba2e2e, 0 0 15px #ff7676;
 }
 
 .home{
-    color:white;
-    background-color: beige;
+    color: #ff7cb3;
     border-radius: 10px;
-    font-family: 'Seaweed Script', sans-serif;
-    font-size: 25px;
     padding: 10px;
+    font-family: 'Seaweed Script', sans-serif;
+    font-size: 35px;
+    text-shadow: 0 0 7px #9e0000, 0 0 11px #ba2e2e, 0 0 15px #ff76;
+    transition: transform 0.2s ease;
 }
 
 .home:hover{
-    box-shadow: inset 0 0 100px 100px rgba(0, 0, 0, 0.1);
+    transform: scale(1.5);
+}
+
+header>div{
+    margin-right: 60px;
 }
 
 #map {
@@ -52,12 +55,13 @@ body {
 h1 {
     font-family: 'Raleway', sans-serif;
     text-align: center;
+    color: #ff7cb3;
 }
 
 #update-button {
     font-family: 'Raleway', sans-serif;
-    background-color: #500000;
-    color: white;
+    background-color: whitesmoke;
+    color: #080630;
     border: 1px solid gray;
     padding: 5px 10px;
     font-size: 16px;
@@ -70,8 +74,8 @@ h1 {
 }
 
 #update-button:hover {
-    background-color: white;
-    color : #500000;
+    background-color: #080630;
+    color : #ff7cb3;
 }
 
 label {
@@ -84,11 +88,15 @@ location-input {
     text-align: center;
 }
 
+.enter{
+    color: #ff7cb3;
+}
+
 a{
     text-decoration: none;
 }
 
 a:visited{
-    color: maroon;
+    color: #ff7cb3;
 }
 
