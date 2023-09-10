@@ -13,10 +13,16 @@
         <header class="maroon-bar">
             <div>Where's Reveille?</div>
         </header>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap');
+        </style>
         <h1>Seen Reveille? Type in where she was so others can see!</h1>
-        <label for="location-input">Enter a location:</label>
+        <div style="text-align:center;">
+            <label for="location-input">Enter a location:</label>
         <input type="text" id="location-input" placeholder=" Blocker Building , MSC , Zach, etc.">
         <button id="update-button">Update Location</button>
+        </div>
         <div id="map"></div>
         <script>
             // Initialize Google Places Autocomplete for the input field
