@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
 const port = 3000;
+const $ = require('jquery');
+const prototypeExtender = require('prototype-extender');
 
 // Enable JSON parsing for incoming requests
 app.use(express.json());
@@ -22,4 +24,14 @@ app.get('/get-location', (req, res) => {
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
+});
+
+app.use(express.static(__dirname));
+
+app.post('/update-location', (req, res) => {
+    const { location } = req.body;
+    console.log('Received location update from client:', location);
+    storedLocation = location;
+    locationHistory.push(location);
+    res.json({ message: 'Location updated successfully' });
 });
