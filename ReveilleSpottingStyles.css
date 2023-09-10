@@ -4,16 +4,37 @@ body {
 }
 
 .maroon-bar {
-    background-color: #500000; /* Set the background color to maroon */
+    display: flex;
+    flex-direction: row;
+    background-color: black; /* Set the background color to maroon */
     color: white; /* Set the text color to white */
-    padding: 50px; /* Add some padding to the top and bottom of the bar */
-    text-align: left; /* Center-align the text within the bar */
+    padding: 30px; /* Add some padding to the top and bottom of the bar */
+    text-align: center; /* Center-align the text within the bar */
     font-family: 'Seaweed Script', cursive;
-    font-size: 80px; /* Set the font size */
+    align-items: center;
+    justify-content: space-between;
 }
 
-#home-button {
-    margin : 0
+.title{
+    font-size: 70px;
+    color: #500000;
+    font-family: 'Seaweed Script', cursive;
+
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 82px rgb(145, 17, 17),
+        0 0 92px rgb(145, 17, 17),
+        0 0 102px rgb(145, 17, 17);
+}
+
+.home{
+    color:white;
+    background-color: beige;
+    border-radius: 10px;
+    font-family: 'Seaweed Script', sans-serif;
+    font-size: 25px;
+    padding: 10px;
 }
 
 #map {
@@ -55,5 +76,13 @@ label {
 
 location-input {
     text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: maroon;
 }
 
