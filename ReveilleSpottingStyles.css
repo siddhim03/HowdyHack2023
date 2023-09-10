@@ -7,15 +7,19 @@ body {
     background-color: #500000; /* Set the background color to maroon */
     color: white; /* Set the text color to white */
     padding: 50px; /* Add some padding to the top and bottom of the bar */
-    text-align: center; /* Center-align the text within the bar */
+    text-align: left; /* Center-align the text within the bar */
     font-family: 'Seaweed Script', cursive;
     font-size: 80px; /* Set the font size */
+}
+
+#home-button {
+    margin : 0
 }
 
 #map {
     height: 400px;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 35px;
 }
 
 h1 {
@@ -23,7 +27,7 @@ h1 {
     text-align: center;
 }
 
-button {
+#update-button {
     font-family: 'Poppins', sans-serif;
     background-color: #500000;
     color: white;
@@ -34,10 +38,11 @@ button {
     border-radius: 5px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     margin-left: 20px;
+    margin-top: 10px;
    
 }
 
-button:hover {
+#update-button:hover {
     background-color: white;
     color : #500000;
 }
@@ -46,16 +51,9 @@ label {
     font-family : 'Poppins', sans-serif;
     font-weight: 700;
     font-size: larger;
-    margin-right: 10px;
 }
 
 location-input {
     text-align: center;
 }
-
-input {
-    padding: 30px 30
-}
-
-
 
