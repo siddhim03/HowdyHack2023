@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Seaweed+Script&display=swap');
+
+
 
 head{
   color: #080630;
@@ -58,6 +60,7 @@ h1 {
   color: #cc1423;
   padding: 10px;
   font-family: 'Seaweed Script', cursive;
+  text-shadow: 0 0 10px #410000, 0 0 20px #410000, 0 0 30px #410000;
   font-size: 40px
 }
 /* Style the left content */
@@ -84,11 +87,26 @@ gap: 30px; /* Adjust the spacing between buttons */
   width: 100px;
   height: 200px;
 }
-.rev:hover{
+
+/*Use id="hovers" for all items that you want to have change to 1.51 size when hovered */
+#hovers:hover{
   transform: scale(1.51)
 }
 
-.item1{
+.Middle_3{
+  background-image: url('RevLogo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  padding: 20px 40px;
+ 
+  transition: transform 0.2s ease;
+  width: 100px;
+  height: 200px;
+}
+
+.item_middle{
   height: 100%;
   margin: 0;
   display: flex;
@@ -101,4 +119,46 @@ gap: 30px; /* Adjust the spacing between buttons */
 
 body {
   background-color: #00000d;
+  
+}
+
+h2 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 50px;
+  /*Change grid-gap to alter size between columns*/
+  grid-gap:200px;
+  
+}
+
+.item_left, .item_right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Abril Fatface', sans-serif;
+  color: white;
+  font-weight: strong;
+  
+}
+
+#row_1,#row_2,#row_3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+#header1{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction: column;
+  text-align: left;
+  margin: -50px;
+  margin-top: -600px;
+  color: white;
+  font-size: 100px;
 }
