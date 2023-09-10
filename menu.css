@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap');
+
 head{
   color: #080630;
 }
@@ -7,7 +9,7 @@ img {
   border-radius: 10px;
 }
 
-.zoom {
+.button {
   padding: 100px, 100px,100px,100px;
   transition: transform .2s; /* Animation */
   width: 100px;
@@ -15,12 +17,36 @@ img {
   margin: 0 auto;
   background-color: #080630;
   border-radius: 10px;
-  color: antiquewhite;
+  color: #cc1423;
   border: none;
-  font-size: 20px;
+  font-size: 30px;
+  outline: none;
+  font-weight: bold;
+  text-shadow: 0 0 10px #410000, 0 0 20px #410000, 0 0 30px #410000;
+  font-family: 'Seaweed Script', cursive;
+}
+.home{
+  padding: 100px, 100px,100px,100px;
+  transition: transform .2s; /* Animation */
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: #080630;
+  border-radius: 10px;
+  color: #cc1423;
+  border: none;
+  font-size: 40px;
+  outline: none;
+  font-weight: bold;
+  text-shadow: 0 0 10px #410000, 0 0 20px #410000, 0 0 30px #410000;
+  font-family:  'Seaweed Script', cursive;
 }
 
-.zoom:hover {
+.home:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.button:hover {
   transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
@@ -31,6 +57,8 @@ h1 {
   background-color: #080630;
   color: #cc1423;
   padding: 10px;
+  font-family: 'Seaweed Script', cursive;
+  font-size: 40px
 }
 /* Style the left content */
 .left {
@@ -42,4 +70,35 @@ flex: 1; /* Takes up available space */
 display: flex;
 gap: 30px; /* Adjust the spacing between buttons */
 
+}
+
+.rev{
+  background-image: url('images/rev.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  padding: 20px 40px;
+ 
+  transition: transform 0.2s ease;
+  width: 100px;
+  height: 200px;
+}
+.rev:hover{
+  transform: scale(1.5)
+}
+
+.item1{
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Seaweed Script', cursive;
+  color: white
+}
+
+body {
+  background-color: #00000d;
 }
