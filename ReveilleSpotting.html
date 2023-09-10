@@ -28,6 +28,7 @@
         <input type="text" id="location-input" placeholder=" Blocker Building , MSC , Zach, etc.">
             <div class="update-button">
             <button id="update-button">Update Location</button>
+            
             </div>
         </div>
         <div id="map"></div>
@@ -35,6 +36,8 @@
              // Initialize Google Places Autocomplete for the input field
              const input = document.getElementById('location-input');
             const autocomplete = new google.maps.places.Autocomplete(input);
+            
+            console.log("hiiii")
         
             // Create a map
             const map = new google.maps.Map(document.getElementById('map'), {

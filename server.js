@@ -2,7 +2,8 @@ const express = require('express');
 const app = express();
 const port = 3000;
 const $ = require('jquery');
-const prototypeExtender = require('prototype-extender');
+
+console.log('test');
 
 // Enable JSON parsing for incoming requests
 app.use(express.json());
