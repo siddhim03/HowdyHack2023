@@ -34,11 +34,22 @@
         </div>
         <div id="map"></div>
         <script>
-            function updateMap(location) {
+             // Initialize Google Places Autocomplete for the input field
+             const input = document.getElementById('location-input');
+            const autocomplete = new google.maps.places.Autocomplete(input);
+        
+            // Create a map
             const map = new google.maps.Map(document.getElementById('map'), {
                 zoom: 15,
-                center: location, // Use the provided location as the initial center
+                center: { lat: 30.61887446700001 , lng: -96.33647623289008 } // Default center coordinates at TAMU
             });
+        
+            // Create a marker (initially hidden)
+            const marker = new google.maps.Marker({ map: map, visible: false });
+        
+        
+            function updateMap(location) {
+            
 
             const marker = new google.maps.Marker({
                 position: location,
@@ -66,20 +77,7 @@
                     console.error('Error:', error);
                 });
         });
-            // Initialize Google Places Autocomplete for the input field
-            const input = document.getElementById('location-input');
-            const autocomplete = new google.maps.places.Autocomplete(input);
-        
-            // Create a map
-            const map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 15,
-                center: { lat: 30.61887446700001 , lng: -96.33647623289008 } // Default center coordinates at TAMU
-            });
-        
-            // Create a marker (initially hidden)
-            const marker = new google.maps.Marker({ map: map, visible: false });
-        
-        
+           
             function sendLocationToBackend(location) {
                 fetch('/update-location', {
                     method: 'POST',
