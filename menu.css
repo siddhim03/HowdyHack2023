@@ -85,7 +85,7 @@ gap: 30px; /* Adjust the spacing between buttons */
   height: 200px;
 }
 .rev:hover{
-  transform: scale(1.5)
+  transform: scale(1.51)
 }
 
 .item1{

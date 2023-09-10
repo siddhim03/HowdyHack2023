@@ -8,19 +8,23 @@ body {
     color: white; /* Set the text color to white */
     padding: 50px; /* Add some padding to the top and bottom of the bar */
     text-align: center; /* Center-align the text within the bar */
+    font-family: 'Seaweed Script', cursive;
     font-size: 80px; /* Set the font size */
 }
 
 #map {
     height: 400px;
     width: 100%;
+    margin-top: 50px;
 }
 
 h1 {
+    font-family: 'Poppins', sans-serif;
     text-align: center;
 }
 
 button {
+    font-family: 'Poppins', sans-serif;
     background-color: #500000;
     color: white;
     border: 1px solid gray;
@@ -29,10 +33,29 @@ button {
     font-weight: bold;
     border-radius: 5px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-left: 20px;
+   
 }
 
 button:hover {
     background-color: white;
     color : #500000;
 }
+
+label {
+    font-family : 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: larger;
+    margin-right: 10px;
+}
+
+location-input {
+    text-align: center;
+}
+
+input {
+    padding: 30px 30
+}
+
+
 

@@ -1,9 +1,107 @@
+<<<<<<< HEAD
 head{
     color: #080630;
+=======
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Seaweed+Script&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    overflow-x: hidden;
+    margin: 0;
+    background-color: black;
+    background-size: cover;
+    border-spacing: 20px;
 }
 
-img {
-    width:100px;
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 24px;
+    margin-right: 24px;
+    width: 100%;
+}
+
+nav>h1{
+    padding-left: 30px;
+}
+
+nav>div{
+    margin-right: 40px;
+}
+
+h1{
+    color: white;
+    font-size: 60px;
+    font-family: 'Seaweed Script', cursive;
+
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 7.5px #fff,
+        0 0 82px rgb(145, 17, 17),
+        0 0 92px rgb(145, 17, 17),
+        0 0 102px rgb(145, 17, 17);
+}
+
+.home{
+    color:white;
+    background-color: beige;
     border-radius: 10px;
+    padding: 10px;
+    font-family: 'Seaweed Script', sans-serif;
+    font-size: 25px;
+}
+
+.mainPage{
+    font-size: 40px;
+    width: 100%;
+}
+
+.welcomeSection{
+    padding: 20px;
+    color: maroon;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.section{
+    padding: 60px 40px 60px 20px;
+    color: maroon;
+    min-width: 25%;
+    max-width: 33.33%; 
+    float: left;
+    background-color: beige;
+    background-size: cover;
+    border-radius: 24px;
+    text-align: center;
+    font-family: 'Seaweed Script', cursive;
+}
+
+.subtitle{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: maroon;
+>>>>>>> 8463d36e605e0c337bd2a710601b9aec900ce640
 }
 
