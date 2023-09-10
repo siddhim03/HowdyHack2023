@@ -2,16 +2,55 @@
 
 <html lang="en"> 
     <head>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJDc33yNoK87ii3UDXi67YtTg-M0vqTYQ&libraries=places"></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Howdy Hack 2023</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="ReveilleSpottingStyles.css">
         
     </head>
     <body>
-        <h1>Where's Reveille?</h1>
-        <p1>
-            
-        </p1>
+        <header class="maroon-bar">
+            <div>Where's Reveille?</div>
+        </header>
+        <h1>Seen Reveille? Type in where she was so others can see!</h1>
+        <label for="location-input">Enter a location:</label>
+        <input type="text" id="location-input" placeholder=" Blocker Building , MSC , Zach, etc.">
+        <button id="update-button">Update Location</button>
+        <div id="map"></div>
+        <script>
+            // Initialize Google Places Autocomplete for the input field
+            const input = document.getElementById('location-input');
+            const autocomplete = new google.maps.places.Autocomplete(input);
+        
+            // Create a map
+            const map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: { lat: 30.61887446700001 , lng: -96.33647623289008 } // Default center coordinates
+            });
+        
+            // Create a marker (initially hidden)
+            const marker = new google.maps.Marker({ map: map, visible: false });
+        
+            // Listen for place selection
+            autocomplete.addListener('place_changed', function() {
+                const place = autocomplete.getPlace();
+                if (!place.geometry) {
+                    console.error('Place not found:', place.name);
+                    return;
+                }
+        
+                // Update the map and marker with the selected place's location
+                map.setCenter(place.geometry.location);
+                marker.setPosition(place.geometry.location);
+                marker.setVisible(true);
+        
+                // Update the displayed location
+                const locationDisplay = document.getElementById('location-display');
+                locationDisplay.textContent = place.formatted_address; // or place.name
+            });
+        </script>
+        
+    
     </body>
 </html>
