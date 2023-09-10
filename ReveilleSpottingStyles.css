@@ -12,20 +12,25 @@ body {
     flex-direction: row;
     background-color: #080630; /* Set the background color to maroon */
     color: white; /* Set the text color to white */
-    padding: 30px; /* Add some padding to the top and bottom of the bar */
     text-align: center; /* Center-align the text within the bar */
     font-family: 'Seaweed Script', cursive;
     align-items: center;
     justify-content: space-between;
 }
 
-.title{
+/* .title{
     color: #ff7cb3;
     font-size: 70px;
     font-family: 'Seaweed Script', cursive;
 
     color: #ff7cb3;
     text-shadow: 0 0 7px #9e0000, 0 0 11px #ba2e2e, 0 0 15px #ff7676;
+} */
+
+.revSpot{
+    width: 15%;
+    height: 15%;
+    padding-left: 3%;
 }
 
 .home{
