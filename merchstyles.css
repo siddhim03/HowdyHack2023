@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Seaweed+Script&display=swap');
 
 
 /* body{
@@ -11,10 +12,58 @@
     position: relative;
 
 } */
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    width: 100%;
+    background-color: black;
+    
+}
+
+nav>h1{
+    padding-left: 10px;
+}
+
+h1{
+    color: maroon;
+    font-size: 60px;
+    font-family: 'Seaweed Script', cursive;
+
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 82px rgb(145, 17, 17),
+        0 0 92px rgb(145, 17, 17),
+        0 0 102px rgb(145, 17, 17);
+}
+
+nav>div{
+    margin-right: 100px;
+}
+
+.home{
+    color:maroon;
+    background-color: beige;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Seaweed Script', cursive;
+    font-size: 25px;
+}
+.home > a {
+    font-family: 'Seaweed Script', cursive;
+    color: maroon;
+    text-decoration: none;
+
+}
 
 body{
     width: 100vw;
     height: 100vh;
+    overflow-x:hidden;
+
 }
 
 *{
@@ -74,6 +123,8 @@ p {
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    width: 100vw;
+
 
 }
 
@@ -88,6 +139,8 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-right: 25px;
+    border-radius: 15px;    
 
 
 }
@@ -99,6 +152,8 @@ p {
 
 .image-caption > p {
     color:aliceblue;
+    font-size: 15px;
+    padding-top:10px;
 }
 /* 
 .cool-title {

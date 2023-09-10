@@ -4,18 +4,43 @@ body {
 }
 
 .maroon-bar {
-    background-color: #500000; /* Set the background color to maroon */
+    display: flex;
+    flex-direction: row;
+    background-color: black; /* Set the background color to maroon */
     color: white; /* Set the text color to white */
-    padding: 50px; /* Add some padding to the top and bottom of the bar */
+    padding: 30px; /* Add some padding to the top and bottom of the bar */
     text-align: center; /* Center-align the text within the bar */
     font-family: 'Seaweed Script', cursive;
-    font-size: 80px; /* Set the font size */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title{
+    font-size: 70px;
+    color: #500000;
+    font-family: 'Seaweed Script', cursive;
+
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 82px rgb(145, 17, 17),
+        0 0 92px rgb(145, 17, 17),
+        0 0 102px rgb(145, 17, 17);
+}
+
+.home{
+    color:white;
+    background-color: beige;
+    border-radius: 10px;
+    font-family: 'Seaweed Script', sans-serif;
+    font-size: 25px;
+    padding: 10px;
 }
 
 #map {
-    height: 400px;
+    height: 500px;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 35px;
 }
 
 h1 {
@@ -23,7 +48,7 @@ h1 {
     text-align: center;
 }
 
-button {
+#update-button {
     font-family: 'Poppins', sans-serif;
     background-color: #500000;
     color: white;
@@ -34,10 +59,11 @@ button {
     border-radius: 5px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     margin-left: 20px;
+    margin-top: 10px;
    
 }
 
-button:hover {
+#update-button:hover {
     background-color: white;
     color : #500000;
 }
@@ -46,16 +72,17 @@ label {
     font-family : 'Poppins', sans-serif;
     font-weight: 700;
     font-size: larger;
-    margin-right: 10px;
 }
 
 location-input {
     text-align: center;
 }
 
-input {
-    padding: 30px 30
+a{
+    text-decoration: none;
 }
 
-
+a:visited{
+    color: maroon;
+}
 
